@@ -1,0 +1,1 @@
+worker: java -jar build/libs/grand_hotel_bot-1.0-all.jar
