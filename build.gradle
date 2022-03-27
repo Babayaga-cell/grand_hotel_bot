@@ -8,9 +8,6 @@ version '1.0'
 
 repositories {
     mavenCentral()
-    maven {
-        url "https://plugins.gradle.org/m2/"
-    }
 }
 
 test {
@@ -18,8 +15,6 @@ test {
 }
 
 dependencies {
-    shadow gradleApi()
-    shadow localGroovy()
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     implementation 'org.javacord:javacord:3.4.0'
