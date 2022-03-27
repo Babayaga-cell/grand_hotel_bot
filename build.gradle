@@ -10,6 +10,10 @@ repositories {
     mavenCentral()
 }
 
+test {
+    useJUnitPlatform()
+}
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
@@ -20,10 +24,6 @@ dependencies {
 task stage(dependsOn: ['build','shadowJar', 'clean', 'test'])
 build.mustRunAfter clean
 build.mustRunAfter test
-
-test {
-    useJUnitPlatform()
-}
 
 jar {
     manifest{
