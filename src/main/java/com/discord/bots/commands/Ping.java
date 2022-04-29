@@ -10,7 +10,10 @@ public class Ping implements MessageCreateListener {
     public void onMessageCreate(MessageCreateEvent event) {
         // Add a listener which answers with "checkout+prefix" if someone writes "prefix+checkin"
         if (event.getMessageContent().equalsIgnoreCase(prefix+"checkin")) {
-            event.getChannel().sendMessage("Good bye Kyosh!!"+prefix);
+            event.getChannel().sendMessage("Welcome to Grand Hotel!!"+prefix);
+        }
+        else if (event.getMessageContent().equalsIgnoreCase(prefix+"help")) {
+            
         }
     }
 }
