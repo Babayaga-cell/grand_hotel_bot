@@ -11,7 +11,7 @@ public class Main {
         DiscordApi bot = new DiscordApiBuilder()
                 .setToken(System.getenv().get("TOKEN"))
                 .login().join();
-
+        
         bot.addListener(new Ping());
         System.out.println("I'm here!");
     }
