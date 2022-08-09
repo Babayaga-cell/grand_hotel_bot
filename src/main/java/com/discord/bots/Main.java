@@ -10,7 +10,6 @@ public class Main {
         // Log the bot in
         DiscordApi bot = new DiscordApiBuilder()
                 .setToken(System.getenv().get("TOKEN"))
-                .setWaitForServersOnStartup(false)
                 .login().join();
 
         bot.addListener(new Ping());
