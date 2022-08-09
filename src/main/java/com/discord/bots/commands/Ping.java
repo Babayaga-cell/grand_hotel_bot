@@ -12,8 +12,5 @@ public class Ping implements MessageCreateListener {
         if (event.getMessageContent().equalsIgnoreCase(prefix+"checkin")) {
             event.getChannel().sendMessage("Welcome to Grand Hotel!!"+prefix);
         }
-        else if (event.getMessageContent().equalsIgnoreCase(prefix+"help")) {
-            
-        }
     }
 }
