@@ -5,7 +5,7 @@ import org.javacord.api.DiscordApi;
 import org.javacord.api.DiscordApiBuilder;
 
 public class Main {
-    public static final String prefix = "(.)(.)";
+    public static final String prefix = "()()";
     public static void main(String[] args) {
         // Log the bot in
         DiscordApi bot = new DiscordApiBuilder()
@@ -13,6 +13,6 @@ public class Main {
                 .login().join();
 
         bot.addListener(new Ping());
-        System.out.println("I'm here babe!");
+        System.out.println("I'm here!");
     }
 }
